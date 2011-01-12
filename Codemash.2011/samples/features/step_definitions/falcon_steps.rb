@@ -21,8 +21,3 @@ end
 Then /^the message value is "([^"]*)"$/ do |message|
   @falcon.message.should == message
 end
-
-Then /^the Falcon does not go to light speed$/ do
-  @falcon.lightspeed.should be_false
-end
-
