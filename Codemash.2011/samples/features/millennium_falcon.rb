@@ -16,10 +16,6 @@ class Falcon
   end
   
   def punch_it
-    if @destination == "Bespin"
-      @message = "It's not my fault!"
-    else
-      @lightspeed = true
-    end
+    @lightspeed = true
   end
 end
