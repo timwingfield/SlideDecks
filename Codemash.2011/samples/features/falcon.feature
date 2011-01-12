@@ -9,10 +9,3 @@ Feature: Millennium Falcon to Light Speed
     When Han says 'Punch it Chewie'
     Then the Falcon goes to light speed
     And the message value is "may not look like much, but she's got it where it counts"
-
-  Scenario: In Epsisode V the hyperdrive is malfunctioning
-    Given the Falcon has taken off
-    And the destination is "Bespin"
-    When Han says 'Punch it Chewie'
-    Then the Falcon does not go to light speed
-    And the message value is "It's not my fault!"
