@@ -1,28 +1,28 @@
-Given /^the Falcon is flying$/ do
-  pending # express the regexp above with the code you wish you had
+Before do
+  @falcon = Falcon.new
 end
 
-Given /^the destination is "([^"]*)"$/ do |destination|
-  pending # express the regexp above with the code you wish you had
+Given /^the Falcon has taken off$/ do
+  @falcon.take_off
 end
 
-When /^Han says "([^"]*)"$/ do |words|
-  pending # express the regexp above with the code you wish you had
+Given /^the destination is "([^"]*)"$/ do |dest|
+  @falcon.set_destination dest
 end
 
-Then /^the Falcon goes to lightspeed$/ do
-  pending # express the regexp above with the code you wish you had
+When /^Han says 'Punch it Chewie'$/ do
+  @falcon.punch_it
 end
 
-Given /^the flight origin is "([^"]*)"$/ do |origin|
-  pending # express the regexp above with the code you wish you had
-end
-
-Then /^the Falcon does not go to lightspeed$/ do
-  pending # express the regexp above with the code you wish you had
+Then /^the Falcon goes to light speed$/ do
+  @falcon.lightspeed.should be_true
 end
 
 Then /^the message value is "([^"]*)"$/ do |message|
-  pending # express the regexp above with the code you wish you had
+  @falcon.message.should == message
+end
+
+Then /^the Falcon does not go to light speed$/ do
+  @falcon.lightspeed.should be_false
 end
 
