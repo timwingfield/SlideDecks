@@ -10,16 +10,4 @@ class Falcon
   def take_off
     @flying = true
   end
-
-  def set_destination(dest)
-    @destination = dest
-  end
-  
-  def punch_it
-    if @destination == "Bespin"
-      @message = "It's not my fault!"
-    else
-      @lightspeed = true
-    end
-  end
 end

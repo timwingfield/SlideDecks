@@ -6,23 +6,18 @@ Given /^the Falcon has taken off$/ do
   @falcon.take_off
 end
 
-Given /^the destination is "([^"]*)"$/ do |dest|
-  @falcon.set_destination dest
+Given /^the destination is "([^"]*)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
 end
 
 When /^Han says 'Punch it Chewie'$/ do
-  @falcon.punch_it
+  pending # express the regexp above with the code you wish you had
 end
 
 Then /^the Falcon goes to light speed$/ do
-  @falcon.lightspeed.should be_true
+  pending # express the regexp above with the code you wish you had
 end
 
-Then /^the message value is "([^"]*)"$/ do |message|
-  @falcon.message.should == message
+Then /^the message value is "([^"]*)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
 end
-
-Then /^the Falcon does not go to light speed$/ do
-  @falcon.lightspeed.should be_false
-end
-
